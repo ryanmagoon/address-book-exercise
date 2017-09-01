@@ -1,0 +1,9 @@
+{
+  "name": "address-book-exercise",
+  "description": "Programming exercise: Create an address book",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "npm run install-api",
+    "install-api": "cd api/ && npm install"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "address-book-api",
+  "description": "express powered api server for the address-book programming exercise",
+  "version": "1.0.0",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.15.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
