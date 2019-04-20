@@ -5,5 +5,8 @@
   "scripts": {
     "install": "npm run install-api",
     "install-api": "cd api/ && npm install"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }
