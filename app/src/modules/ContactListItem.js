@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ContactListItem = ({ name }) => (
+const ContactListItem = ({ name, onClick }) => (
   <section>
-    <h3>{name}</h3>
+    <button onClick={onClick}>
+      <h3>{name}</h3>
+    </button>
   </section>
 )
 
