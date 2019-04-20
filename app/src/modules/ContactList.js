@@ -12,6 +12,15 @@ const Container = styled.aside`
   padding-bottom: 20px;
 `
 
+const Letter = styled.h3`
+  color: blue;
+  margin-bottom: none;
+  margin-top: 5;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: 10px;
+`
+
 const ContactList = ({ contacts, onSelectContact }) => {
   const SortedContactList = [
     ...new Set(contacts.map(({ name }) => name.charAt(0)))
@@ -31,7 +40,7 @@ const ContactList = ({ contacts, onSelectContact }) => {
     <Container>
       {Object.keys(SortedContactList).map(letter => (
         <section key={letter}>
-          <h2>{letter}</h2>
+          <Letter>{letter}</Letter>
           {SortedContactList[letter].map(contact => (
             <ContactListItem
               key={contact.id}
