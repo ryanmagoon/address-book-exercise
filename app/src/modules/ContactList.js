@@ -5,8 +5,11 @@ import ContactListItem from './ContactListItem'
 
 const Container = styled.aside`
   border-right: 1px solid black;
+  margin-right: 10px;
   height: 100vh;
   width: 150px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
 `
 
 const ContactList = ({ contacts, onSelectContact }) => {

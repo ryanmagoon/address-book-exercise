@@ -7,7 +7,6 @@ import ContactList from './modules/ContactList'
 
 const Container = styled.main`
   display: flex;
-  flex-direction: row;
 `
 
 const App = () => {

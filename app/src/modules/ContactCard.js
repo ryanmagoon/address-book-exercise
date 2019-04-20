@@ -1,14 +1,14 @@
 import React from 'react'
 
-const ContactInfo = () => null
+import ContactInfo from './ContactInfo'
 const Education = () => null
 const Experience = () => null
 
-const ContactCard = ({ name }) => (
+const ContactCard = ({ education, experience, ...info }) => (
   <article>
-    <ContactInfo />
-    <Education />
-    <Experience />
+    <ContactInfo {...info} />
+    <Education {...education} />
+    <Experience {...experience} />
   </article>
 )
 
