@@ -1,6 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import ContactListItem from './ContactListItem'
+
+const Container = styled.aside`
+  border-right: 1px solid black;
+  height: 100vh;
+  width: 150px;
+`
 
 const ContactList = ({ contacts, onSelectContact }) => {
   const SortedContactList = [
@@ -18,7 +25,7 @@ const ContactList = ({ contacts, onSelectContact }) => {
     )
 
   return (
-    <aside>
+    <Container>
       {Object.keys(SortedContactList).map(letter => (
         <section key={letter}>
           <h2>{letter}</h2>
@@ -31,7 +38,7 @@ const ContactList = ({ contacts, onSelectContact }) => {
           ))}
         </section>
       ))}
-    </aside>
+    </Container>
   )
 }
 export default ContactList

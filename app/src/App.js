@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import styled from 'styled-components'
 
 import ContactCard from './modules/ContactCard'
 import ContactList from './modules/ContactList'
+
+const Container = styled.main`
+  display: flex;
+  flex-direction: row;
+`
 
 const App = () => {
   const [data, setData] = useState({ people: [] })
@@ -21,7 +27,7 @@ const App = () => {
   }, [])
 
   return (
-    <main className="App">
+    <Container className="App">
       <ContactList
         contacts={data.people}
         onSelectContact={({ id }) => setCurrentUserId(id)}
@@ -29,7 +35,7 @@ const App = () => {
       {currentUserId && (
         <ContactCard {...data.people.find(({ id }) => id === currentUserId)} />
       )}
-    </main>
+    </Container>
   )
 }
 
