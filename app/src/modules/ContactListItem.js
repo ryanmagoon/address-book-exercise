@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactListItem = ({ name }) => (
   <section>
-    <h2>{name}</h2>
+    <h3>{name}</h3>
   </section>
 )
 
