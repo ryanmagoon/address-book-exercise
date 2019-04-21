@@ -9,12 +9,20 @@ You will need the following things properly installed on your computer.
 
 ## Setup
 
-Install Dependencies `npm install`
+Install Dependencies `npm install` from both the `api` and the `app` directories
 
 ## Run the api
 
 ```bash
 node api/server.js
+```
+
+## Run the web app
+
+(from the `app` directory)
+
+```bash
+npm run start
 ```
 
 ## URL Endpoints
