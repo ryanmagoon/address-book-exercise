@@ -23,8 +23,7 @@ const Info = styled.section`
   flex-direction: column;
 `
 
-const ContactInfo = ({ email, name, title, phone, ...props }) => {
-  console.log(props)
+const ContactInfo = ({ email, name, title, phone }) => {
   return (
     <Container>
       <Photo src={avatar} alt="default profile pic" />
